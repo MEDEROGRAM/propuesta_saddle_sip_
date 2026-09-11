@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saddle & Sip Coffee Co. - Evolución de Marca y Rebranding">
+    <title>Saddle & Sip Coffee Co. - Evolución de Marca</title>
+
+    <!-- Fuentes: preconnect + swap para no bloquear render -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        saddleGreen:  '#043322',
+                        saddleGreen2: '#3e5430',
+                        saddleBrown:  '#5c3c25',
+                        saddleGold:   '#c5a059',
+                        saddleCream:  '#f4efeb',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="fixed top-0 left-0 w-full bg-saddleCream/95 backdrop-blur-md z-50 border-b border-saddleGold/20 px-4 sm:px-8 py-3.5 flex justify-between items-center">
+        <a href="#" class="transition-opacity hover:opacity-90">
+            <span class="font-serif text-lg sm:text-xl text-saddleGreen tracking-wider">SADDLE & SIP</span>
+        </a>
+        <nav class="flex items-center gap-1.5 sm:gap-2">
+            <a href="#evolution" class="border border-saddleGreen text-saddleGreen text-[8px] sm:text-[9px] tracking-widest uppercase px-2.5 sm:px-4 py-2 hover:bg-saddleGreen hover:text-saddleCream transition-all duration-300 whitespace-nowrap font-semibold">Evolución</a>
+            <a href="#concepto" class="border border-saddleGreen text-saddleGreen text-[8px] sm:text-[9px] tracking-widest uppercase px-2.5 sm:px-4 py-2 hover:bg-saddleGreen hover:text-saddleCream transition-all duration-300 whitespace-nowrap font-semibold">Concepto</a>
+            <a href="#mockups" class="border border-saddleGreen text-saddleGreen text-[8px] sm:text-[9px] tracking-widest uppercase px-2.5 sm:px-4 py-2 hover:bg-saddleGreen hover:text-saddleCream transition-all duration-300 whitespace-nowrap font-semibold">Mockups</a>
+        </nav>
+    </header>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24 relative bg-gradient-to-b from-saddleCream to-saddleCream/80">
+        <div class="max-w-4xl hero-fade z-10 space-y-8 my-auto pb-12 sm:pb-0">
+            <span class="text-xs tracking-[0.3em] uppercase text-saddleGold font-bold block">Dirección de Arte e Identidad</span>
+            <h1 class="font-serif text-5xl sm:text-6xl md:text-7xl tracking-widest text-saddleGreen leading-tight">SADDLE & SIP</h1>
+            <p class="text-xs sm:text-sm text-saddleGreen/80 max-w-2xl mx-auto font-light leading-relaxed">
+                Evolución de marca: Del clásico ecuestre hacia una reinterpretación moderna del café de especialidad. Caballo, humo y la doble S que define nuestra esencia.
+            </p>
+            <div class="pt-4 flex justify-center">
+                <a href="#evolution" class="border border-saddleGreen text-saddleGreen text-xs tracking-widest uppercase px-10 py-4 hover:bg-saddleGreen hover:text-saddleCream transition-all duration-300 font-semibold">Explorar Evolución</a>
+            </div>
+        </div>
+        <div class="hidden sm:flex absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center space-y-2">
+            <span class="text-[10px] tracking-widest uppercase text-saddleGreen/60">Sigue bajando</span>
+            <div class="scroll-indicator-line"></div>
+        </div>
+    </section>
+
+    <!-- ===================== 01 · EVOLUCIÓN ===================== -->
+    <section id="evolution" class="py-24 px-6 md:px-12 lg:px-24 bg-saddleCream border-b border-saddleGold/10">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+            <div class="space-y-6 fade-in-ready">
+                <span class="text-[10px] tracking-[0.2em] uppercase text-saddleGold font-bold">01 / El Punto de Partida</span>
+                <h2 class="font-serif text-3xl md:text-4xl tracking-widest text-saddleGreen leading-tight">CABALLO & TRADICIÓN</h2>
+                <div class="gold-line"></div>
+                <p class="text-xs md:text-sm leading-relaxed text-saddleGreen/80 font-light">
+                    La identidad original de <strong>Saddle & Sip</strong> nace con la figura del caballo como símbolo central. Un tributo al espíritu ecuestre, la elegancia y la tradición que define Jacksonville y su conexión con el lifestyle clásico estadounidense.
+                </p>
+                <p class="text-xs md:text-sm leading-relaxed text-saddleGreen/80 font-light">
+                    Este logotipo estableció la base cromática: verde profundo, tonos de cuero bronceado y el carácter premium que nos distingue en el mercado de café especializado.
+                </p>
+            </div>
+
+            <div class="original-logo-container fade-in-ready">
+                <img src="https://i.postimg.cc/L5p1Khrp/poster.jpg"
+                     alt="Logo anterior Saddle & Sip - Identidad ecuestre original"
+                     loading="lazy" decoding="async"
+                     width="400" height="400">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== 02 · CONCEPTO ===================== -->
+    <section id="concepto" class="py-24 px-6 md:px-12 lg:px-24 bg-saddleCream/50">
+        <div class="max-w-3xl mx-auto text-center space-y-8 fade-in-ready">
+            <span class="text-[10px] tracking-[0.2em] uppercase text-saddleGold font-bold">02 / Concepto Creativo</span>
+            <h2 class="font-serif text-3xl md:text-4xl tracking-widest text-saddleGreen">CABALLO, HUMO Y LA DOBLE S</h2>
+            <div class="gold-line mx-auto"></div>
+            <p class="text-xs md:text-sm leading-relaxed text-saddleGreen/80 font-light max-w-2xl mx-auto">
+                El nuevo logo mantiene el caballo como elemento central, pero lo reinterpreta a través de <strong>curvas fluidas de humo</strong> que emanan del animal. Estas curvas recrean visualmente la <strong>doble S</strong> que vive en el nombre "Saddle & Sip", generando una legibilidad dual que encapsula toda la esencia de la marca en una sola imagen.
+            </p>
+            <p class="text-xs md:text-sm leading-relaxed text-saddleGreen/80 font-light max-w-2xl mx-auto">
+                El humo evoca la calidez de un café recién preparado, transmitiendo autenticidad, movimiento y la promesa de una experiencia sensorial completa. La geometría de las curvas es deliberada, moderna, pero sin perder nunca la sofisticación ecuestre que nos define.
+            </p>
+        </div>
+
+        <!-- Tres iconos concepto -->
+        <div class="pt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+
+            <!-- 1. CABALLO (Recurso-20: silueta de caballo) -->
+            <div class="concept-icon-card fade-in-ready">
+                <div class="concept-icon-card__image">
+                    <img src="https://i.postimg.cc/B6z51qLZ/Recurso-20content.png"
+                         alt="Icono Caballo — Silueta estilizada del caballo" loading="lazy" decoding="async" width="80" height="80">
+                </div>
+                <p class="text-[9px] font-bold text-saddleGreen mb-1 tracking-wide">CABALLO</p>
+                <p class="text-[10px] text-saddleGreen/70">Elegancia ecuestre y movimiento</p>
+            </div>
+
+            <!-- 2. HUMO (Recurso-21: taza con vapor en forma de S) -->
+            <div class="concept-icon-card fade-in-ready">
+                <div class="concept-icon-card__image">
+                    <img src="https://i.postimg.cc/gJ7y6YXm/Recurso-21content.png"
+                         alt="Icono Humo — Taza con vapor en forma de S" loading="lazy" decoding="async" width="80" height="80">
+                </div>
+                <p class="text-[9px] font-bold text-saddleGreen mb-1 tracking-wide">HUMO</p>
+                <p class="text-[10px] text-saddleGreen/70">Calidez del café especializado</p>
+            </div>
+
+            <!-- 3. DOBLE S (Recurso-19: monograma SS estilizado) -->
+            <div class="concept-icon-card fade-in-ready">
+                <div class="concept-icon-card__image">
+                    <img src="https://i.postimg.cc/SsPLzy2m/Recurso-19content.png"
+                         alt="Icono Doble S — Monograma SS estilizado" loading="lazy" decoding="async" width="80" height="80">
+                </div>
+                <p class="text-[9px] font-bold text-saddleGreen mb-1 tracking-wide">DOBLE S</p>
+                <p class="text-[10px] text-saddleGreen/70">Saddle & Sip integrados en una sola forma</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== 03 · NUEVO LOGO ===================== -->
+    <section class="py-24 px-6 md:px-12 lg:px-24 bg-saddleCream border-t border-saddleGold/10">
+        <div class="max-w-6xl mx-auto">
+
+            <div class="text-center space-y-4 mb-16 fade-in-ready">
+                <span class="text-[10px] tracking-[0.2em] uppercase text-saddleGold font-bold">03 / Dirección de Arte</span>
+                <h2 class="font-serif text-3xl md:text-4xl tracking-widest text-saddleGreen">EL NUEVO LOGOTIPO</h2>
+                <div class="gold-line mx-auto"></div>
+            </div>
+
+            <!-- 3 variantes del logo -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
+
+                <div class="logo-variant-card fade-in-ready">
+                    <span class="logo-variant-card__label">Sello y Sticker</span>
+                    <div class="logo-variant-card__image">
+                        <img src="https://i.postimg.cc/LsP592kp/Recurso-2content.png"
+                             alt="Logo Saddle & Sip sello y sticker"
+                             loading="lazy" decoding="async" width="200" height="200">
+                    </div>
+                    <p class="logo-variant-card__desc">Caballo con curvas de humo integradas formando la doble S. Composición principal para sellos circulares y stickers.</p>
+                </div>
+
+                <div class="logo-variant-card fade-in-ready">
+                    <span class="logo-variant-card__label">Versión Horizontal</span>
+                    <div class="logo-variant-card__image">
+                        <img src="https://i.postimg.cc/HLMnYd0m/Recurso-5content.png"
+                             alt="Logo Saddle & Sip versión horizontal"
+                             loading="lazy" decoding="async" width="200" height="200">
+                    </div>
+                    <p class="logo-variant-card__desc">Símbolo independiente para favicon, app icons y espacios reducidos. Mantiene la integridad del concepto en formato compacto.</p>
+                </div>
+
+                <div class="logo-variant-card fade-in-ready">
+                    <span class="logo-variant-card__label">Versión Vertical</span>
+                    <div class="logo-variant-card__image">
+                        <img src="https://i.postimg.cc/nLmrFpKZ/Recurso-6content.png"
+                             alt="Logo Saddle & Sip versión vertical"
+                             loading="lazy" decoding="async" width="200" height="200">
+                    </div>
+                    <p class="logo-variant-card__desc">Formato vertical con tipografía Playfair Display Bold. Ideal para señalética, empaques y materiales impresos.</p>
+                </div>
+            </div>
+
+            <!-- Anatomía del logo -->
+            <div class="mt-20 max-w-4xl mx-auto border-t border-saddleGold/10 pt-12 fade-in-ready">
+                <h3 class="font-serif text-2xl tracking-widest text-saddleGreen mb-8 text-center">ANATOMÍA DEL LOGOTIPO</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="anatomy-card">
+                        <h4 class="font-serif text-lg text-saddleGreen mb-3">Elemento Caballo</h4>
+                        <p class="text-xs text-saddleGreen/80 leading-relaxed font-light">El caballo mantiene su lugar central, pero ahora simplificado en líneas más fluidas y expresivas. La silueta es reconocible al instante, evocando elegancia y movimiento dinámico.</p>
+                    </div>
+                    <div class="anatomy-card">
+                        <h4 class="font-serif text-lg text-saddleGreen mb-3">Curvas de Humo</h4>
+                        <p class="text-xs text-saddleGreen/80 leading-relaxed font-light">Cuatro curvas fluidas emanan desde el caballo, recreando la doble S de "Saddle & Sip". El movimiento es orgánico, como el vapor de una bebida caliente.</p>
+                    </div>
+                    <div class="anatomy-card">
+                        <h4 class="font-serif text-lg text-saddleGreen mb-3">Tipografía Integrada</h4>
+                        <p class="text-xs text-saddleGreen/80 leading-relaxed font-light">El texto "SADDLE & SIP" utiliza Playfair Display Bold, manteniendo la elegancia y el rigor del original. El tracking ha sido refinado para máxima legibilidad.</p>
+                    </div>
+                    <div class="anatomy-card">
+                        <h4 class="font-serif text-lg text-saddleGreen mb-3">Sistema de Colores</h4>
+                        <p class="text-xs text-saddleGreen/80 leading-relaxed font-light">Verde profundo (#043322) como color principal. Oro suave (#c5a059) para acentos y jerarquía. La paleta evoca lujo, tradición ecuestre y calidez simultáneamente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== 04 · MOCKUPS ===================== -->
+    <section id="mockups" class="py-24 px-4 sm:px-8 md:px-12 lg:px-24 bg-saddleCream/50 border-t border-saddleGold/10">
+        <div class="max-w-6xl mx-auto">
+
+            <div class="text-center space-y-4 mb-16 fade-in-ready">
+                <span class="text-[10px] tracking-[0.2em] uppercase text-saddleGold font-bold">04 / Aplicaciones Prácticas</span>
+                <h2 class="font-serif text-3xl md:text-4xl tracking-widest text-saddleGreen">EL LOGO EN CONTEXTO</h2>
+                <div class="gold-line mx-auto"></div>
+                <p class="text-xs text-saddleGreen/60 max-w-2xl mx-auto font-light">Aplicación del nuevo logo en touchpoints clave de la marca: vinil, bordado, sticker, serigrafía, tallado y más.</p>
+            </div>
+
+            <!-- Grid de Mockups -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+                <!-- Mockup 1: Overnight Oats -->
+                <article class="mockup-card fade-in-ready">
+                    <div class="mockup-card__image">
+                        <img src="https://i.postimg.cc/2ybh74dY/A-high-quality-photorealistic-product-mockup-photo-1789064139258.png"
+                             alt="Aplicación de logo: etiqueta en faja de papel con impresión dorada sobre frasco"
+                             loading="lazy" decoding="async" width="600" height="450">
+                    </div>
+                    <div class="mockup-card__body">
+                        <h4 class="mockup-card__title">Etiqueta en Faja de Papel</h4>
+                        <p class="mockup-card__desc">Logo aplicado mediante impresión en tinta dorada metálica sobre faja de papel verde que envuelve el frasco. La etiqueta vertical actúa como sello premium de autenticidad.</p>
+                        <div class="mockup-card__tag">ETIQUETA / PACKAGING</div>
+                    </div>
+                </article>
+
+                <!-- Mockup 2: Parfait -->
+                <article class="mockup-card fade-in-ready">
+                    <div class="mockup-card__image">
+                        <img src="https://i.postimg.cc/7hG0ng1y/A-high-quality-photorealistic-product-photograph-o-1789063531529.png"
+                             alt="Aplicación de logo: sticker circular adhesivo festoneado sobre vaso transparente"
+                             loading="lazy" decoding="async" width="600" height="450">
+                    </div>
+                    <div class="mockup-card__body">
+                        <h4 class="mockup-card__title">Sticker Circular Adhesivo</h4>
+                        <p class="mockup-card__desc">Logo aplicado mediante sticker adhesivo circular con borde festoneado, impreso en beige sobre fondo verde profundo. Colocado al centro del vaso como sello de marca.</p>
+                        <div class="mockup-card__tag">STICKER / ADHESIVO</div>
+                    </div>
+                </article>
+
+                <!-- Mockup 3: Snacks & Treats -->
+                <article class="mockup-card fade-in-ready">
+                    <div class="mockup-card__image">
+                        <img src="https://i.postimg.cc/j2wP4z60/Gemini-Generated-Image-4ikqyr4ikqyr4ikq.jpg"
+                             alt="Aplicación de logo: serigrafía, sticker e impresión en sistema de packaging integral"
+                             loading="lazy" decoding="async" width="600" height="450">
+                    </div>
+                    <div class="mockup-card__body">
+                        <h4 class="mockup-card__title">Sistema de Packaging Integral</h4>
+                        <p class="mockup-card__desc">Logo aplicado en múltiples técnicas: serigrafía en sleeves de papel, sticker adhesivo en envase plástico e impresión en pouches. Demuestra la versatilidad del logo en toda la línea.</p>
+                        <div class="mockup-card__tag">SERIGRAFÍA / STICKER / IMPRESIÓN</div>
+                    </div>
+                </article>
+
+                <!-- Mockup 4: Food Truck -->
+                <article class="mockup-card fade-in-ready">
+                    <div class="mockup-card__image">
+                        <img src="https://i.postimg.cc/j2pNgLvN/Gemini-Generated-Image-g7pl9ug7pl9ug7pl.jpg"
+                             alt="Aplicación de logo: vinil vehicular a gran escala y señalética en food truck"
+                             loading="lazy" decoding="async" width="600" height="450">
+                    </div>
+                    <div class="mockup-card__body">
+                        <h4 class="mockup-card__title">Vinil Vehicular & Señalética</h4>
+                        <p class="mockup-card__desc">Logo aplicado a gran escala en vinil adhesivo sobre el panel lateral del food truck. Complementado con señalética tipo A-frame en madera y menú impreso montado. Máxima visibilidad de marca.</p>
+                        <div class="mockup-card__tag">VINIL / SEÑALÉTICA</div>
+                    </div>
+                </article>
+
+                <!-- Mockup 5: Bebidas -->
+                <article class="mockup-card fade-in-ready">
+                    <div class="mockup-card__image">
+                        <img src="https://i.postimg.cc/L5YL3zkX/Gemini-Generated-Image-kr1kyjkr1kyjkr1k.jpg"
+                             alt="Aplicación de logo: impresión dorada en sleeve de cartón y serigrafía en vaso plástico"
+                             loading="lazy" decoding="async" width="600" height="450">
+                    </div>
+                    <div class="mockup-card__body">
+                        <h4 class="mockup-card__title">Impresión en Vasos & Sleeves</h4>
+                        <p class="mockup-card__desc">Logo impreso en tinta dorada sobre sleeve de cartón texturizado (vaso caliente) y serigrafía directa en verde sobre plástico transparente (vaso frío). Dos técnicas de aplicación para uso diario.</p>
+                        <div class="mockup-card__tag">IMPRESIÓN / SERIGRAFÍA</div>
+                    </div>
+                </article>
+
+                <!-- Mockup 6: Merchandising -->
+                <article class="mockup-card fade-in-ready">
+                    <div class="mockup-card__image">
+                        <img src="https://i.postimg.cc/MHMVmy0k/Gemini-Generated-Image-qkh57uqkh57uqkh5.jpg"
+                             alt="Aplicación de logo: bordado en gorra trucker y serigrafía en bolsa de papel"
+                             loading="lazy" decoding="async" width="600" height="450">
+                    </div>
+                    <div class="mockup-card__body">
+                        <h4 class="mockup-card__title">Bordado & Serigrafía en Merch</h4>
+                        <p class="mockup-card__desc">Logo bordado en hilo crema sobre panel frontal de gorra trucker verde. En la bolsa de papel, logo estampado por serigrafía en verde oscuro. Dos acabados distintos, misma identidad.</p>
+                        <div class="mockup-card__tag">BORDADO / SERIGRAFÍA</div>
+                    </div>
+                </article>
+
+                <!-- Mockup 7: Uniforme Baristas -->
+                <article class="mockup-card fade-in-ready">
+                    <div class="mockup-card__image">
+                        <img src="https://i.postimg.cc/7hF7sfXh/Gemini-Generated-Image-sj5fezsj5fezsj5f.jpg"
+                             alt="Aplicación de logo: bordado en uniformes de equipo y tallado en letrero de madera"
+                             loading="lazy" decoding="async" width="600" height="450">
+                    </div>
+                    <div class="mockup-card__body">
+                        <h4 class="mockup-card__title">Bordado en Uniformes & Tallado Interior</h4>
+                        <p class="mockup-card__desc">Logo bordado en hilo crema sobre delantal de lona verde (pecho), gorras y espalda de camisas. Complementado con letrero de madera tallado montado en la pared interior del truck.</p>
+                        <div class="mockup-card__tag">BORDADO / TALLADO</div>
+                    </div>
+                </article>
+
+                <!-- Mockup 8: Logo Corpóreo -->
+                <article class="mockup-card fade-in-ready">
+                    <div class="mockup-card__image">
+                        <img src="https://i.postimg.cc/J0DZ5b3t/Gemini-Generated-Image-wn0o4pwn0o4pwn0o.jpg"
+                             alt="Aplicación de logo: tallado en alto relieve sobre mármol verde y grabado en cuero"
+                             loading="lazy" decoding="async" width="600" height="450">
+                    </div>
+                    <div class="mockup-card__body">
+                        <h4 class="mockup-card__title">Tallado en Piedra & Grabado en Cuero</h4>
+                        <p class="mockup-card__desc">Logo tallado en alto relieve sobre losa de mármol verde con marco de madera oscura. Acompañado de notebooks con logo repujado en cuero y papelería con impresión offset. Máxima expresión corporativa.</p>
+                        <div class="mockup-card__tag">TALLADO / GRABADO / IMPRESIÓN</div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== 05 · ESPECIFICACIONES ===================== -->
+    <section class="py-24 px-6 md:px-12 lg:px-24 bg-saddleCream border-t border-saddleGold/10">
+        <div class="max-w-4xl mx-auto">
+
+            <div class="text-center space-y-4 mb-16 fade-in-ready">
+                <span class="text-[10px] tracking-[0.2em] uppercase text-saddleGold font-bold">05 / Guía Técnica</span>
+                <h2 class="font-serif text-3xl md:text-4xl tracking-widest text-saddleGreen">ESPECIFICACIONES & PALETA</h2>
+                <div class="gold-line mx-auto"></div>
+            </div>
+
+            <!-- Paleta de colores -->
+            <div class="mb-16 p-8 md:p-12 bg-saddleCream/70 border border-saddleGold/30 fade-in-ready">
+                <h3 class="font-serif text-2xl tracking-widest text-saddleGreen mb-8 text-center">SISTEMA DE COLORES</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="text-center space-y-3">
+                        <div class="color-swatch" style="background:#043322; border: 2px solid #043322;"></div>
+                        <p class="font-semibold text-sm text-saddleGreen">Verde Profundo</p>
+                        <p class="text-xs text-saddleGreen/60 font-mono">#043322</p>
+                        <p class="text-[9px] text-saddleGold font-bold tracking-wide">PRINCIPAL</p>
+                    </div>
+                    <div class="text-center space-y-3">
+                        <div class="color-swatch" style="background:#3e5430; border: 2px solid #3e5430;"></div>
+                        <p class="font-semibold text-sm text-saddleGreen">Verde Secundario</p>
+                        <p class="text-xs text-saddleGreen/60 font-mono">#3e5430</p>
+                        <p class="text-[9px] text-saddleGold font-bold tracking-wide">TONOS</p>
+                    </div>
+                    <div class="text-center space-y-3">
+                        <div class="color-swatch" style="background:#5c3c25; border: 2px solid #5c3c25;"></div>
+                        <p class="font-semibold text-sm text-saddleGreen">Marrón Cuero</p>
+                        <p class="text-xs text-saddleGreen/60 font-mono">#5c3c25</p>
+                        <p class="text-[9px] text-saddleGold font-bold tracking-wide">CALIDEZ</p>
+                    </div>
+                    <div class="text-center space-y-3">
+                        <div class="color-swatch" style="background:#c5a059; border: 2px solid #c5a059;"></div>
+                        <p class="font-semibold text-sm text-saddleGreen">Oro Suave</p>
+                        <p class="text-xs text-saddleGreen/60 font-mono">#c5a059</p>
+                        <p class="text-[9px] text-saddleGold font-bold tracking-wide">ACENTOS</p>
+                    </div>
+                </div>
+                <div class="mt-8 p-4 bg-saddleCream border border-saddleGold/20 text-center">
+                    <p class="text-[9px] text-saddleGreen/60 font-light">
+                        <strong class="text-saddleGreen">Fondo Neutro:</strong> #f4efeb |
+                        <strong class="text-saddleGreen">Contraste Recomendado:</strong> 4.5:1 mínimo para accesibilidad
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tipografía -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12 fade-in-ready">
+                <div class="p-8 bg-saddleCream/70 border border-saddleGold/30 space-y-6">
+                    <h3 class="font-serif text-xl tracking-widest text-saddleGreen">Tipografía Primaria</h3>
+                    <div class="p-4 bg-saddleCream border border-saddleGold/20">
+                        <p class="font-serif text-3xl text-saddleGreen mb-2">Playfair Display</p>
+                        <p class="text-xs text-saddleGreen/70 mb-2 font-semibold">Bold (700) — Encabezados y Titulares</p>
+                        <p class="text-[11px] text-saddleGreen/60">Elegancia y presencia visual. Utilizada en títulos, nombres de secciones, rótulos principales y firma de marca.</p>
+                    </div>
+                </div>
+                <div class="p-8 bg-saddleCream/70 border border-saddleGold/30 space-y-6">
+                    <h3 class="font-serif text-xl tracking-widest text-saddleGreen">Tipografía Secundaria</h3>
+                    <div class="p-4 bg-saddleCream border border-saddleGold/20">
+                        <p class="text-lg text-saddleGreen font-semibold mb-2">Calibri</p>
+                        <p class="text-xs text-saddleGreen/70 mb-2 font-semibold">Regular (400) — Cuerpo de Texto</p>
+                        <p class="text-[11px] text-saddleGreen/60">Claridad y legibilidad superior. Aplicada en descripciones, párrafos, información técnica y comunicación secundaria.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reglas de uso -->
+            <div class="p-8 md:p-12 bg-saddleCream/70 border border-saddleGold/30 fade-in-ready">
+                <h3 class="font-serif text-2xl tracking-widest text-saddleGreen mb-8 text-center">REGLAS DE USO</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="rules-correct">
+                        <p class="font-bold text-sm text-saddleGreen mb-4 flex items-center gap-2"><span class="text-lg">✓</span> CORRECTO</p>
+                        <ul class="space-y-2 text-[10px] text-saddleGreen/80">
+                            <li>• Mantener proporciones originales</li>
+                            <li>• Usar fondos con contraste suficiente</li>
+                            <li>• Respetar espacios de seguridad</li>
+                            <li>• Crear versiones monocromáticas</li>
+                            <li>• Aplicar en fondos claros u oscuros</li>
+                            <li>• Usar isotipo para espacios reducidos</li>
+                            <li>• Respetar jerarquía tipográfica</li>
+                        </ul>
+                    </div>
+                    <div class="rules-incorrect">
+                        <p class="font-bold text-sm text-saddleGreen mb-4 flex items-center gap-2"><span class="text-lg">✗</span> INCORRECTO</p>
+                        <ul class="space-y-2 text-[10px] text-saddleGreen/80">
+                            <li>• No distorsionar o estirar el logo</li>
+                            <li>• No alterar curvas del humo</li>
+                            <li>• Evitar fondos que quiten legibilidad</li>
+                            <li>• No cambiar orden de elementos</li>
+                            <li>• No modificar colores de la paleta</li>
+                            <li>• Nunca achicar por debajo de 1" ancho</li>
+                            <li>• No combinar con tipografías no autorizadas</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-6 p-4 bg-saddleCream border border-saddleGold/20 text-center">
+                    <p class="text-[9px] text-saddleGreen/60">Para consultas sobre aplicaciones no cubiertas en esta guía, contactar dirección de arte.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="bg-saddleGreen text-saddleCream py-16 px-6 border-t border-saddleGold/20">
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            <h3 class="font-serif text-2xl md:text-3xl tracking-[0.2em] uppercase">SADDLE & SIP</h3>
+            <p class="text-xs tracking-widest text-saddleCream/70 max-w-md mx-auto leading-relaxed">
+                Ride. Sip. Live Well.<br>
+                Evolución de Identidad Visual y Dirección de Arte
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 text-xs text-saddleCream/50 pt-4">
+                <span>Jacksonville, Florida</span>
+                <span class="hidden sm:block">•</span>
+                <span>Café de Especialidad</span>
+                <span class="hidden sm:block">•</span>
+                <span>© 2025</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS externo (defer = no bloquea el parser) -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>
