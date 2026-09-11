@@ -1,0 +1,274 @@
+/* =============================================
+   Saddle & Sip Coffee Co. - Estilos Principales
+   ============================================= */
+
+/* --- Reset & Base --- */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+    font-family: Calibri, 'Segoe UI', sans-serif;
+    background-color: #f4efeb;
+    color: #043322;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+}
+
+::selection {
+    background: #043322;
+    color: #f4efeb;
+}
+
+.font-serif,
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* --- Scrollbar oculto --- */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* --- Animaciones --- */
+/* Animación al scroll: elementos comienzan visibles, JS agrega
+   la clase .will-animate que los oculta, y luego .is-visible los revela.
+   Esto garantiza que el contenido sea visible sin JS. */
+.will-animate {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.will-animate.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+    .will-animate { opacity: 1; transform: none; transition: none; }
+}
+
+/* Hero siempre visible */
+.hero-fade {
+    animation: heroFadeIn 0.8s ease-out forwards;
+}
+@keyframes heroFadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Bounce para indicador scroll */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+}
+.animate-bounce-custom {
+    animation: bounce 2s infinite;
+}
+
+/* --- Contenedores de imagen (fix principal) --- */
+
+/* Card de mockup: imagen con aspect-ratio fijo */
+.mockup-card {
+    background: #f4efeb;
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease;
+}
+.mockup-card:hover {
+    box-shadow: 0 8px 30px rgba(4, 51, 34, 0.1);
+}
+
+.mockup-card__image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(4,51,34,0.04) 0%, rgba(197,160,89,0.04) 100%);
+}
+.mockup-card__image img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.mockup-card__body {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.mockup-card__title {
+    font-size: 1.125rem;
+    letter-spacing: 0.025em;
+    color: #043322;
+    margin: 0;
+}
+.mockup-card__desc {
+    font-size: 0.75rem;
+    color: rgba(4, 51, 34, 0.7);
+    line-height: 1.7;
+    font-weight: 300;
+    flex: 1;
+}
+.mockup-card__tag {
+    font-size: 9px;
+    color: #c5a059;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    padding-top: 0.5rem;
+}
+
+/* --- Logo variants (Sección 03) --- */
+.logo-variant-card {
+    background: rgba(244, 239, 235, 0.7);
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    transition: box-shadow 0.3s ease;
+}
+.logo-variant-card:hover {
+    box-shadow: 0 8px 30px rgba(4, 51, 34, 0.08);
+}
+
+.logo-variant-card__label {
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #c5a059;
+    font-weight: 700;
+}
+
+.logo-variant-card__image {
+    background: #f4efeb;
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    padding: 1.5rem;
+    overflow: hidden;
+}
+.logo-variant-card__image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.logo-variant-card__desc {
+    font-size: 0.75rem;
+    color: rgba(4, 51, 34, 0.7);
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+/* --- Concept icons (Sección 02) --- */
+.concept-icon-card {
+    background: rgba(244, 239, 235, 0.7);
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    padding: 1.5rem;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+.concept-icon-card:hover {
+    box-shadow: 0 4px 16px rgba(4, 51, 34, 0.08);
+}
+
+.concept-icon-card__image {
+    height: 5rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.concept-icon-card__image img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* --- Sección 01: Imagen logo original --- */
+.original-logo-container {
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(4,51,34,0.04) 0%, rgba(197,160,89,0.04) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+.original-logo-container img {
+    max-width: 24rem;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.5s ease;
+}
+.original-logo-container img:hover {
+    transform: scale(1.05);
+}
+
+/* --- Color swatches --- */
+.color-swatch {
+    width: 100%;
+    height: 8rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* --- Reglas de uso --- */
+.rules-correct {
+    padding: 1.5rem;
+    border: 2px solid #4ade80;
+    background: #f0fdf4;
+}
+.rules-incorrect {
+    padding: 1.5rem;
+    border: 2px solid #f87171;
+    background: #fef2f2;
+}
+
+/* --- Anatomía cards --- */
+.anatomy-card {
+    padding: 1.5rem;
+    background: rgba(244, 239, 235, 0.7);
+    border: 1px solid rgba(197, 160, 89, 0.3);
+}
+
+/* --- Divider line --- */
+.gold-line {
+    width: 3rem;
+    height: 1px;
+    background: #c5a059;
+}
+
+/* --- Scroll indicator --- */
+.scroll-indicator-line {
+    width: 1px;
+    height: 3rem;
+    background: rgba(4, 51, 34, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+.scroll-indicator-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: #c5a059;
+    animation: bounce 2s infinite;
+}
